@@ -1,4 +1,5 @@
 # 김수민의 PORTFOLIO
+ PORTFOLIO LINK : https://s00m1n1.github.io/portfolio
 ## POROJECT 1
  SAMICK(삼익가구)   
  LINK : https://s00m1n1.github.io/portfolio/samick/index.html
