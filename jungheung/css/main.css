@@ -1,0 +1,684 @@
+@import url(default.css);
+@import url(common.css);
+
+.visual { 
+    height:1000px
+ } 
+.visual ul li {
+    position: relative;
+}
+.visual ul li img { 
+    display:block; 
+    width:100%; 
+    height:100%; 
+    object-fit:cover;
+} 
+.visual ul li .txt {
+    position: absolute;
+    left: calc(50% - 700px);
+    bottom: 141px;
+    color: #FFF;
+    transition: 0.5s;
+}
+.visual ul li .txt::before {
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 1px;
+    height: 352px;
+    background-color: rgba(255,255,255,0.7);
+    content: "";
+}
+.visual ul li .txt h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+.visual ul li .txt p {
+    font-size: 20px;
+}
+.visual ul li .txt p.txt_eng {
+    margin: 33px 0 16px 0;
+}
+.visual .paging {
+    display: none;
+    position: relative;
+}
+.visual .paging span {
+    position: absolute;
+    bottom: 20px;
+    width: 5px;
+    height: 5px;
+    border-radius: 3px;
+    display: block; 
+    background-color: #FFF;
+    z-index: 20;
+}
+.visual .paging span:first-child {
+    left: calc(50% - 15px);
+}
+.visual .paging span:nth-child(2) {
+    left: 50%;
+}
+.visual .paging span:last-child {
+    left: calc(50% + 15px);
+}
+.visual .btn_wrap {
+    position: absolute;
+    left: calc(50% - 700px);
+    bottom: 71px;
+    z-index: 10;
+}
+.visual .btn_wrap button {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.3);
+}
+.visual .btn_wrap button i {
+    color: #FFF;
+    font-size: 40px;
+}
+@media screen and (max-width:1440px) {
+    .visual ul li .txt {
+        left: 40px;
+    }
+    .visual .btn_wrap {
+        left: 40px;
+    }
+}
+@media screen and (max-width:860px) {
+    .visual { 
+        position: relative;
+        height:500px
+     }
+    .visual ul li .txt {
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%,50%);
+        text-align: center;
+    }
+    .visual ul li .txt::before {
+        display: none;
+    }
+    .visual ul li .txt h2 {
+        font-size: 30px;
+        margin: 0 0 19px 0;
+    }
+    .visual ul li .txt p {
+        font-size: 13px;
+    }
+    .visual ul li .txt p.txt_eng {
+        display: none;
+    }
+    .visual ul li .txt p .m_no {
+        display: none;
+    } 
+    .visual .paging {
+        display: block;
+    }
+    .visual .btn_wrap {
+        position: absolute;
+        left: calc(55% - 820px);
+        bottom: 71px;
+        z-index: 10;
+    }
+    .visual .btn_wrap button {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255,255,255,0.3);
+    }
+    .visual .btn_wrap button i {
+        color: #FFF;
+        font-size: 40px;
+    }
+}
+.bisness {
+    position: relative;
+}
+.bisness .tit {
+    color: #FFF;
+}
+.bisness .tit h2 {
+    position: relative;
+    padding: 109px 0 35px 0;
+    font-size: 60px;
+    font-weight: 700;
+}
+.bisness .tit h2::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 127px;
+    height: 1px;
+    background-color: rgba(255,255,255,0.7);
+    content: "";
+}
+.bisness .tit p {
+    margin: 44px 0 45px 0;
+    font-size: 20px;
+}
+.bisness .tit .more a {
+    display: block;
+    font-size: 16px;
+    width: 150px;
+    height: 44px;
+    line-height: 44px;
+    background-color: rgba(255,255,255,0.3);
+    text-align: center;
+}
+.business_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    z-index: -1;
+}
+.business_bg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.bisness .bis_cnt ul {
+    margin: 78px 0 143px 0;
+    height: 926px;
+}
+.bisness .bis_cnt ul li {
+    float: left;
+    width: calc(50% - 20px);
+    height: 443px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bisness .bis_cnt ul li:nth-child(1) {
+    background-image: url(../images/main/business_cnt1.png);
+    margin: 0 40px 40px 0;
+}
+.bisness .bis_cnt ul li:nth-child(2) {
+    background-image: url(../images/main/business_cnt2.png);
+    margin: 0 0 40px 0;
+}
+.bisness .bis_cnt ul li:nth-child(3) {
+    background-image: url(../images/main/business_cnt3.png);
+    margin: 0 40px 0 0;
+}
+.bisness .bis_cnt ul li:nth-child(4) {
+    background-image: url(../images/main/business_cnt4.png);
+}
+.bisness .bis_cnt ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 443px;
+}
+.bisness .bis_cnt ul li a .inner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 33px 0;
+    width: 226px;
+    height: 147px;
+    background-color: #FFF;
+}
+.bisness .bis_cnt ul li a .inner strong {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+}
+.bisness .bis_cnt ul li a .inner span {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+@media screen and (max-width:860px) {
+    .bisness .tit h2 {
+        padding: 40px 0 9px 0;
+        font-size: 30px;
+        text-align: center;
+    }
+    .bisness .tit h2::after {
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 127px;
+    }
+    .bisness .tit p {
+        margin: 19px 0;
+        font-size: 13px;
+        text-align: center;
+    }
+    .bisness .tit .more {
+        display: flex;
+        justify-content: center;
+    }
+    .bisness .tit .more a {
+        font-size: 13px;
+        width: 123px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .business_bg {
+        height: 300px;
+    }
+    .bisness .bis_cnt ul {
+        margin: 23px 0 49px 0;
+        height: 709px;
+    }
+    .bisness .bis_cnt ul li {
+        height: 300px;
+    }
+    .bisness .bis_cnt ul li a {
+        height: 300px;
+    }
+    .bisness .bis_cnt ul li a .inner {
+        padding: 20px 0;
+        width: 200px;
+        height: 100px;
+    }
+    .bisness .bis_cnt ul li a .inner strong {
+        font-size: 20px;
+    }
+    .bisness .bis_cnt ul li a .inner span {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:640px) {
+    .business_bg img {
+        height: 300px;
+    }
+    .bisness .bis_cnt ul li {
+        float: none;
+        width: 100%;
+        height: 160px;
+    }
+    .bisness .bis_cnt ul li:nth-child(1) {
+        margin: 0 0 3% 0;
+    }
+    .bisness .bis_cnt ul li:nth-child(2) {
+        margin: 0 0 3% 0;
+    }
+    .bisness .bis_cnt ul li:nth-child(3) {
+        margin: 0 0 3% 0;
+    }
+    .bisness .bis_cnt ul li a {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 160px;
+    }
+    .bisness .bis_cnt ul li a .inner {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        padding: 30px 0 0 0;
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        color: #FFF;
+        background-color: rgba(255,255,255,0.3);
+    }
+    .bisness .bis_cnt ul li a .inner strong {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+    }
+    .bisness .bis_cnt ul li a .inner span {
+        display: block;
+        font-size: 13px;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+}
+.recruit {
+    position: relative;
+    height: 335px;
+    background-color: #0C4CA3;
+    color: #FFF;
+}
+.recruit .txt {
+    position: relative;
+    left: calc(50% - 778px);
+    top: 0;
+    width: 40%;
+
+}
+.recruit .txt h2 {
+    padding: 42px 0 33px 0;
+    font-size: 60px;
+    font-weight: 700;
+}
+.recruit .txt h2 br {
+    display: none;
+}
+.recruit .txt .more a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 180px;
+    height: 44px;
+    margin: 33px 0 0 0;
+    background-color: rgba(255,255,255,0.3);
+}
+.recruit  .txt.more a i {
+    font-size: 25px;
+}
+.recruit .bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 42%;
+    height: 100%;
+}
+.recruit .bg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width:1636px) {
+    .recruit .txt {
+        left: 40px;
+    }
+} 
+@media screen and (max-width:1020px) {
+    .recruit .txt h2 {
+        padding: 42px 0 3px 0;
+    }
+}
+@media screen and (max-width:860px) {
+    .recruit {
+        height: 182px;
+    }
+    .recruit .txt h2 {
+        padding: 34px 0 22px 0;
+        font-size: 40px;
+    }
+    .recruit .txt p {
+        display: none;
+    }
+    .recruit .txt .more a {
+        width: 96px;
+        height: 25px;
+        margin: 0;
+    }
+    .recruit .txt .more a span {
+        margin: 0 0 0 7px; 
+        font-size: 13px;
+    }
+    .recruit .txt .more a i {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:600px) {
+    .recruit .txt h2 {
+        padding: 24px 0 12px 0;
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    .recruit .txt h2 br {
+        display: block;
+    }
+}
+.news {
+    margin: 104px 0 0 0;
+    transition: 0.5s;
+}
+.news .tit h2 {
+    float: left;
+    margin: 0 0 102px 0;
+    font-size: 60px;
+    font-weight: 700;
+}
+.news .tit .more {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #3d3d3d;
+    border-radius: 15px;
+    margin: 34px 0 0 21px
+}
+.news .tit .more i {
+    color: #FFF;
+    font-size: 30px;
+}
+.news .cnt ul {
+    margin: 0 0 141px 0;
+}
+.news .cnt ul li {
+    float: left;
+    width: calc(33.33% - 27px);
+    /* 100% 나누기 3(li의갯수) = 33.33% 
+       80px(여백40*2) 나누기 3(li의갯수) = 27px -> 여백이 li의 양옆으로 동일하게 들어가기 때문에*/
+    margin-right: 40px;
+    border-top: 1px solid #999999;
+}
+.news .cnt ul li:last-child {
+    margin-right: 0;
+}
+.news .cnt ul li a {
+    display: block;
+}
+.news .cnt ul li a .date {
+    padding: 47px 0 50px 0;
+    display: block;
+    font-size: 50px;
+}
+.news .cnt ul li a .txt_tit {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news .cnt ul li a .txt_cnt {
+    margin: 50px 0 36px;
+    display: block;
+    font-size: 20px;
+    line-height:1.2;
+    height:3.6em;
+    overflow:hidden;
+}
+.news .cnt ul li a img {
+    width: 100%;
+}
+@media screen and (max-width:1000px) {
+    .news .cnt ul li a .date {
+        padding: 27px 0 30px 0;
+        font-size: 40px;
+    }
+    .news .cnt ul li a .txt_tit {
+        font-size: 20px;
+    }
+    .news .cnt ul li a .txt_cnt {
+        margin: 30px 0 26px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:860px) {
+    .news {
+        margin: 51px 0 0 0;
+    }
+    .news .tit {
+        position: relative;
+    }
+    .news .tit h2 {
+        float: none;
+        margin: 0 0 27px 0;
+        font-size: 30px;
+        text-align: center;
+    }
+    .news .tit .more {
+        position: absolute;
+        left: calc(50% - 20px);
+        bottom: -440px;
+        width: 25px;
+        height: 25px;
+        margin: 0px
+    }
+    .news .tit .more i {
+        font-size: 25px;
+    }
+    .news .cnt ul {
+        float: none;
+        margin: 0 0 141px 0;
+    }
+    .news .cnt ul li {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        border-top: 1px solid #999999;
+        text-align: center;
+    }
+    .news .cnt ul li a .date {
+        padding: 22px 0 7px 0;
+        font-size: 20px;
+    }
+    .news .cnt ul li a .txt_tit {
+        margin: 0 0 29px 0;
+        font-size: 20px;
+    }
+    .news .cnt ul li a .txt_cnt {
+        display: none;
+    }
+    .news .cnt ul li a img {
+        display: none;
+    }
+}
+.board {
+    display: flex;
+    color: #FFF;
+}
+.board .inner1 {
+    width: 50%;
+} 
+.board .inner2 {
+    width: 50%;
+}
+.board h2 {
+    font-size: 60px;
+}
+.board h2 br {
+    display: none;
+}
+.board p {
+    margin: 30px 0 49px 0;
+    font-size: 20px;
+}
+.board .more a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 180px;
+    height: 44px;
+    background-color: rgba(255,255,255,0.3);
+}
+.board .more a i {
+    font-size: 25px;
+}
+.board .resist {
+    background: url(../images/main/board_regist.png) no-repeat center center / cover; 
+}
+.board .resist .board_txt {
+    padding: 16% 0 46% 17%;
+}
+.board .as .board_txt,
+.board .way .board_txt {
+    padding: 53px 0 65px 83px;
+}
+.board .as {
+    height: 50%;
+    background: url(../images/main/board_as.png) no-repeat center center / cover; 
+}
+.board .way {
+    height: 50%;
+    background: url(../images/main/board_way.png) no-repeat center center / cover; 
+}
+@media screen and (max-width:1440px) {
+    .board .resist .board_txt {
+        padding: 129px 0 380px 100px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .board h2 {
+        font-size: 40px;
+    }
+    .board .resist .board_txt {
+        padding: 129px 0 336px 80px;
+    }
+    .board p {
+        margin: 25px 0 40px 0;
+    }    
+}
+@media screen and (max-width:860px) {
+    .board h2 {
+        font-size: 30px;
+    }
+    .board p {
+        font-size: 15px;
+    }
+    .board .more a {
+        width: 96px;
+        height: 25px;
+    }
+    .board .more a span {
+        margin: 0 0 0 7px; 
+        font-size: 13px;
+    }
+    .board .more a i{
+        font-size: 15px;
+    }
+    .board .resist .board_txt {
+        padding: 129px 0 287px 80px;
+    }
+}
+@media screen and (max-width:700px) {
+    .board .resist .board_txt {
+        padding: 129px 0 287px 50px;
+    }
+}
+@media screen and (max-width:640px) {
+    .board .inner1 {
+        width: 100%;
+    } 
+    .board .inner2 {
+        width: 100%;
+    }
+    .board .as,
+    .board .way {
+        width: 100%;
+    }
+    .board h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .board h2 br {
+        display: block;
+    }
+    .board p {
+        display: none;
+    }
+    .board .more {
+        margin-top: 15px;
+        margin-left: calc(50% - 48px);
+    }
+    .board .more a {
+        width: 96px;
+        height: 25px;
+        margin: 0;
+    }
+    .board .more a span {
+        margin: 0 0 0 7px; 
+        font-size: 13px;
+    }
+    .board .more a i {
+        font-size: 15px;
+    }
+    .board .resist .board_txt {
+        padding: 50% 0 0 0;
+    }
+    .board .as .board_txt,
+    .board .way .board_txt {
+        padding: 10%;
+    }
+}

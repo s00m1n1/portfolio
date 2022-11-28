@@ -1,0 +1,899 @@
+@import url(default.css);
+@import url(common.css);
+
+.visual {
+    position: relative;
+    height: 950px;
+    background: url(../images/main/visual.png) no-repeat center center / cover;
+}
+.visual .txt {
+    position: absolute;
+    left: 130px;
+    bottom: 117px;
+    color: #FFF;
+}
+.visual .txt h2 {
+    font-family: 'Noto Serif KR';
+    font-size: 50px;
+}
+.visual .txt p {
+    margin: 22px 0 0 0;
+    font-size: 20px;
+}
+@media screen and (max-width:860px) {
+    .visual {
+        height: auto;
+    }
+    .visual .txt {
+        position: relative;
+        padding: 255px 0 273px 0;
+        left: auto;
+        bottom: auto;
+    }
+    .visual .txt h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+    .visual .txt p {
+        margin: 14px 0 0 0;
+        font-size: 13px;
+        text-align: center;
+    }
+}
+.banner {
+    margin: 68px 0;
+}
+.banner ul li {
+    position: relative;
+    float: left;
+    margin: 0 4% 0 0;
+    width: 48%;
+}
+.banner ul li.rest {
+    margin-right: 0;
+}
+.banner ul li a {
+    display: block;
+    height: 247px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} 
+.banner ul li.sale a {
+    background-image: url(../images/main/banner1.png);
+}
+.banner ul li.rest a {
+    background-image: url(../images/main/banner2.png);
+}
+.banner ul li a .txt {
+    position: absolute;
+    color: #FFF;
+}
+.banner ul li.sale a .txt {
+    left: 74px;
+    bottom: 51px;
+}
+.banner ul li.rest a .txt {
+    right: 61px;
+    bottom: 59px;
+    text-align: right;
+}
+.banner ul li a .txt strong {
+    display: block;
+    font-family: 'Noto Serif KR';
+}
+.banner ul li.sale a .txt strong {
+    margin: 0 0 5px 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+.banner ul li.rest a .txt strong {
+    font-size: 80px;
+}
+.banner ul li a .txt span {
+    display: block;
+    font-size: 20px;
+}
+@media screen and (max-width:1060px) {
+    .banner ul li.sale a .txt {
+        bottom: 68px;
+    }
+    .banner ul li.rest a .txt {
+        bottom: 78px;
+    }
+    .banner ul li.sale a .txt strong {
+        font-size: 30px;
+    }
+    .banner ul li.rest a .txt strong {
+        font-size: 60px;
+    }
+    .banner ul li a .txt span {
+        font-size: 15px;
+    }
+} 
+@media screen and (max-width:700px) {
+    .banner {
+        margin: 35px 0;
+    }
+    .banner ul li {
+        float: none;
+        margin: 0 0 15px 0;
+        width: 100%;
+    }
+    .banner ul li.rest {
+        margin-bottom: 0;
+    }
+    .banner ul li a {
+        height: 150px;
+    }
+    .banner ul li.sale a .txt {
+        bottom: 33px;
+    }
+    .banner ul li.rest a .txt {
+        right: 96px;
+        bottom: 48px;
+    }
+    .banner ul li.sale a .txt strong {
+        margin: 0 0 5px 0;
+        font-size: 18px;
+    }
+    .banner ul li.rest a .txt strong {
+        font-size: 30px;
+    }
+    .banner ul li a .txt span {
+        font-size: 13px;
+    }
+}
+.best {
+    position: relative;
+}
+.best .popup {
+    height: 950px;
+}
+.best .popup ul li {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.best .popup ul li.frill {
+    background-image: url(../images/main/best_bg1.png);
+}
+.best .popup ul li.swan {
+    background-image: url(../images/main/best_bg2.png);
+}
+.best .popup ul li.torino {
+    background-image: url(../images/main/best_bg3.png);
+}
+.best .popup ul li.dellis {
+    background-image: url(../images/main/best_bg4.png);
+}
+.best .popup ul li h2 {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    z-index: 100;
+    color: #FFF;
+    font-size: 70px;
+    font-family: 'Noto Serif KR';
+    text-align: center;
+}
+.best .popup ul li .cnt {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 50;
+    width: 63%;
+    padding: 150px 0;
+}
+.best .popup ul li .cnt a {
+    display: block;
+    width: 100%;
+}
+.best .popup ul li .cnt a img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.best .popup ul li .cnt a .txt {
+    display: block;
+    padding: 26px 0;
+    width: 100%;
+    text-align: center;
+    color: #3d3d3d;
+    background-color: #FFF;
+}
+.best .popup ul li .cnt a .txt strong {
+    display: block;
+    font-size: 30px;
+    font-family: 'Noto Serif KR';
+}
+.best .popup ul li .cnt a .txt>span {
+    display: block;
+    margin: 10px 0 15px 0;
+}
+.best .popup ul li .cnt a .txt .more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.best .popup ul li .cnt a .txt .more i {
+    font-size: 20px;
+    font-weight: 300;
+    color: #3d3d3d;
+}
+.best .popup .btn {
+    position: absolute;
+    left: calc(50% - 104px);
+    bottom: 70px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+.best .popup .btn .paging {
+    width: auto;
+} 
+.best .popup .btn .paging span {
+    width: 13px;
+    height: 13px;
+    background-color: #FFF;
+    margin: 0 7px;
+}
+.best .popup .btn button {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.best .popup .btn button span {
+    display: none;
+}
+.best .popup .btn button i {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 300;
+}
+@media screen and (max-width:860px) {
+    .best .popup {
+        height: 700px;
+    }
+    .best .popup ul li h2 {
+        top: 50px;
+        font-size: 60px;
+    }
+    .best .popup ul li .cnt {
+        width: 73%;
+        padding: 100px 0;
+    }
+    .best .popup ul li .cnt a img {
+        height: 350px;
+    }
+    .best .popup ul li .cnt a .txt {
+        padding: 10px 0;
+    }
+    .best .popup ul li .cnt a .txt>span {
+        margin: 5px 0;
+    }
+    .best .popup .btn {
+        bottom: 50px;
+    }
+}
+@media screen and (max-width:700px) {
+    .best .popup {
+        height: 600px;
+    }
+    .best .popup ul li h2 {
+        top: 60px;
+        font-size: 50px;
+    }
+    .best .popup ul li .cnt a .txt strong {
+        font-size: 20px;
+    }
+} 
+@media screen and (max-width:700px) {
+    .best .popup ul li h2 {
+        top: 17px;
+        font-size: 40px;
+    }
+    .best .popup ul li .cnt {
+        width: 80%;
+        padding: 50px 0;
+    }
+    .best .popup .btn .paging span {
+        width: 8px;
+        height: 8px;
+    }
+    .best .popup .btn {
+        left: calc(50% - 64px);
+    }
+    .best .popup .btn button {
+        width: 20px;
+        height: 20px;
+    }
+    .best .popup .btn button i {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+@media screen and (max-width:460px) {
+    .best .popup ul li h2 {
+        top: 27px;
+        font-size: 25px;
+    }
+}
+.new .top {
+    position: relative;
+}
+.new h2 {
+    margin: 147px 0 70px 0;
+    font-size: 50px;
+    font-family: 'Noto Serif KR';
+    text-align: center;
+}
+.new .more {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new .more::after {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: #999;
+    width: 81px;
+    height: 1px;
+    content: "";
+}
+.new .more i {
+    font-size: 20px;
+    font-weight: 300;
+    color: #3d3d3d;
+}
+.new .top .plus {
+    display: none;
+}
+.new ul li {
+    float: left;
+    margin: 0 2% 0 0;
+    width: 32%;
+}
+.new ul li:nth-child(2) {
+    margin-top: 4%;
+}
+.new ul li:last-child {
+    margin-right: 0;
+}
+.new ul li a {
+    display: block;
+    width: 100%;
+}
+.new ul li a .pic {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+.new ul li a .pic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.new ul li a:hover .pic img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.new ul li a:hover .pic {
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+}
+.new ul li a strong {
+    display: block;
+    margin: 15px 0;
+    text-align: center;
+    font-family: 'Noto Serif KR';
+    font-size: 20px;
+}
+.new ul li a span {
+    display: block;
+    text-align: center;
+}
+@media screen and (max-width:860px) {
+    .new h2 {
+        margin: 87px 0 50px 0;
+        font-size: 30px;
+    }
+    .new .more {
+        top: 16px;
+    }
+}
+@media screen and (max-width:640px) {
+    .new h2 {
+        margin: 25px 0 18px 0;
+        font-size: 20px;
+    }
+    .new ul li:nth-child(2) {
+        margin-top: 0;
+    }
+    .new ul li a strong {
+        margin: 5px 0;
+        font-size: 15px;
+        text-align: left;
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+    }
+    .new ul li a span {
+        text-align: left;
+    }
+    .new .more {
+        display: none;
+    }
+    .new .top .plus {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+    }
+    .new .top .plus span {
+        display: none;
+    }
+    .new .top .plus i {
+        font-size: 20px;
+        font-weight: 300;
+        color: #3d3d3d;
+    }
+}
+.colect {
+    margin: 85px 0 0 0;
+    padding: 51px 0 200px 0;
+    background-color: #F6EFE2;
+}
+.colect .tap_wrap {
+    position: relative;
+}
+.colect .tap_wrap>li {
+    float: left;
+    margin: 0 54px 0 0;
+}
+.colect ul li h2 {
+    color: #999;
+    font-family: 'Noto Serif KR';
+    font-size: 20px;
+}
+.colect ul li.active h2 {
+    color: #1d1d1D;
+    border-bottom: 1px solid #1d1d1d;
+    font-weight: 700;
+}
+.colect ul li .detail {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    padding: 90px 0 134px 0;
+    width: 100%;
+}
+.colect ul li .detail .tit {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    color: #3d3d3d;
+}
+.colect ul li .detail .tit h3 {
+    font-family: 'Noto Serif KR';
+    font-size: 50px;
+    margin: 0 0 64px 0;
+}
+.colect ul li .detail .tit h3 span {
+    display: block;
+    font-weight: 700;
+}
+.colect ul li .detail .tit a {
+    display: flex;
+    align-items: center;
+}
+.colect ul li .detail .tit .plus {
+    display: none;
+}
+.colect ul li .detail .left {
+    float: left;
+    width: 48%;
+}
+.colect ul li .detail .left ul li {
+    float: left;
+    width: 48%;
+    margin-top: 4%;
+}
+.colect ul li .detail .left ul li:first-child {
+    margin: 0 0 0 52%;
+}
+.colect ul li .detail .left ul li:last-child {
+    margin-left: 4%;
+}
+.colect ul li .detail .left ul li a {
+    display: block;
+    width: 100%;
+}
+.colect ul li .detail .left ul li a span {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    font-size: 0;
+    line-height: 0
+}
+.colect ul li .detail .left ul li a span img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.colect ul li .detail .right {
+    float: right;
+    width: 48%;
+    margin: 0 0 0 4%;
+}
+.colect ul li .detail .right a {
+    display: block;
+    width: 100%;
+}
+.colect ul li .detail .right a span {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    font-size: 0;
+    line-height: 0
+}
+.colect ul li .detail .right a span img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.colect ul li.active .detail {
+    display: block;
+}
+.colect ul li .detail .left ul li a:hover span img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.colect ul li .detail .left ul li a:hover span {
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+}
+.colect ul li .detail .right a:hover span img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.colect ul li .detail .right a:hover span {
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+}
+@media screen and (max-width:1400px) {
+    .colect ul li .detail .tit h3 {
+        font-size: 35px;
+        margin: 0 0 44px 0;
+    }
+}
+@media screen and (max-width:1000px) {
+    .colect ul li .detail .tit h3 {
+        font-size: 30px;
+        margin: 0 0 24px 0;
+    }
+}
+@media screen and (max-width:860px) {
+    .colect ul li h2 {
+        font-size: 15px;
+    }
+    .colect ul li .detail .tit h3 {
+        font-size: 20px;
+        margin: 0 0 14px 0;
+    }
+}
+@media screen and (max-width:640px) {
+    .colect {
+        margin: 55px 0 0 0;
+        padding: 41px 0 80px 0;
+    }
+    .colect .tap_wrap>li {
+        margin: 0 40px 0 0;
+    }
+    .colect ul li h2 {
+        font-size: 13px;
+    }
+    .colect ul li .detail {
+        top: 52PX;
+        padding: 0;
+    }
+    .colect ul li .detail .tit {
+        position: relative;
+        left: auto;
+        top: auto;
+    }
+    .colect ul li .detail .tit h3 {
+        font-size: 18px;
+        margin: 0 0 39px 0;
+        text-align: center;
+    }
+    .colect ul li .detail .tit h3 span {
+        display: inline;
+        font-weight: 700;
+    }
+    .colect ul li .detail .tit a {
+        display: none;
+    }
+    .colect ul li .detail .tit .plus {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+    }
+    .colect ul li .detail .tit .plus span {
+        display: none;
+    }
+    .colect ul li .detail .tit .plus i {
+        color: #3d3d3d;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .colect ul li .detail .left {
+        float: none;
+        width: auto;
+    }
+    .colect ul li .detail .left ul li {
+        width: 48%;
+    }
+    .colect ul li .detail .left ul li:first-child {
+        margin: 0 4% 4% 0;
+    }
+    .colect ul li .detail .left ul li:nth-child(2) {
+        margin: 0 0 4% 0;
+    }
+    .colect ul li .detail .left ul li:last-child {
+        margin: 0;
+    }
+}
+.sns .tit {
+    position: relative;
+}
+.sns .tit h2 {
+    margin: 58px 0;
+    font-size: 50px;
+    font-family: 'Noto Serif KR';
+    text-align: center;
+}
+.sns .tit .more {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sns .tit .more::after {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: #999;
+    width: 81px;
+    height: 1px;
+    content: "";
+}
+.sns .tit .plus {
+    display: none;
+}
+.sns .sns_slide ul {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    white-space: nowrap;
+    animation-name: sns_slide;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.sns .sns_slide ul li {
+    display: inline-block;
+    margin: 0 1% 0 0;
+    width: 200px;
+}
+.sns .sns_slide ul li a {
+    display: block;
+}
+.sns .sns_slide ul li a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes sns_slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-66%); }
+}
+
+@media screen and (max-width:640px) {
+    .sns .tit h2 {
+        margin: 38px 0;
+        font-size: 20px;
+    }
+    .sns .tit .more {
+        display: none;
+    }
+    .sns .tit .plus {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+    }
+    .sns .tit .plus span {
+        display: none;
+    }
+    .sns .tit .plus i {
+        color: #3d3d3d;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .sns .sns_slide ul li {
+        width: 150px;
+    }
+}
+.store {
+    margin: 101px 0 0 0;
+    padding: 0 0 62px 0;
+    background: url(../images/main/store.png) no-repeat center center / cover;
+    color: #FFF;
+}
+.store .logo {
+    padding: 63px 0 18px 0;
+    text-align: center;
+}
+.store .logo img {
+    width: 60px;
+    height: 30px;
+}
+.store h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.store p {
+    margin: 18px 0 25px 0;
+    text-align: center;
+}
+.store .search_border {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 330px;
+    height: 40px;
+    border: 1px solid #FFF;
+}
+.store .search_border label {
+    display: none;
+}
+.store .search_border input[type="text"] {
+    float: left;
+    width: 250px;
+    height: 40px;
+    margin: 0 0 0 10px;
+    border: 0;
+    outline: 0; 
+    background-color: transparent;
+    font-size: 18px;
+}
+.store .search_border input[type="text"]::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+.store .search_border .search {
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: 3px 10px 0 0;
+}
+.store .search_border .search span {
+    display: none;
+}
+.store .search_border .search i {
+    font-size: 30px;
+    font-weight: 300;
+}
+@media screen and (max-width:640px) {
+    .store {
+        margin: 50px 0 0 0;
+    }
+    .store h2 {
+        font-size: 20px;
+    }
+    .store p {
+        margin: 10px 0 15px 0;
+    }
+    .store .search_border {
+        width: 214px;
+        height: 32px;
+    }
+    .store .search_border input[type="text"] {
+        width: 150px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .store .search_border .search {
+        width: 20px;
+        height: 20px;
+        margin: 5px 10px 0 0;
+    }
+    .store .search_border .search i {
+        font-size: 20px;
+    }
+}
+.footer {
+    margin: 46px 0 0 0;
+    color: #999;
+}
+.footer .flogo a img {
+    display: block;
+    width: 100px;
+    height: 50px;
+}
+.footer .sns_ico {
+    float: right;
+    margin: -40px 0 0 0;
+}
+.footer .sns_ico ul li {
+    float: left;
+    margin-left: 5px;
+}
+.footer .fbody {
+    margin: 46px 0 20px 0;
+}
+.footer .fbody span {
+    margin-right: 35px;
+}
+.footer .inner span {
+    margin-right: 35px;
+}
+.footer .copy {
+    margin: 40px 0 55px 0;
+    color: #CCC;
+
+}
+@media screen and (max-width:640px) {
+    .footer .flogo a img {
+        display: none;
+    }
+    .footer .sns_ico {
+        float: none;
+        margin: 0;
+    }
+    .footer .sns_ico ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .sns_ico ul li {
+        float: left;
+        margin-left: 5px;
+        width: 25px;
+        height: 25px;
+    }
+    .footer .sns_ico ul li a img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .footer .fbody span {
+        margin-right: 28px;
+    }
+    .footer .inner span {
+        margin-right: 28px;
+    }
+}

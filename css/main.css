@@ -1,0 +1,224 @@
+@import url('default.css');
+@import url('common.css');
+
+.list {
+    height: 1080px;
+    position: relative;
+}
+.list .top {
+    height: 540px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.list .top .soom {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 30px;
+    color: #FFC700;
+}
+.sam .list .top {
+    background-image: url(../images/main/list_sam.png);
+}
+.aqu .list .top {
+    background-image: url(../images/main/list_aqu.png);
+}
+.jun .list .top {
+    background-image: url(../images/main/list_jun.png);
+}
+.list .top .tit {
+    position: relative;
+    padding: 417px 0 0 0;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 70px;
+    color: #FFC700;
+}
+.list .top .tit::before {
+    position: absolute;
+    left: 25px;
+    top: 430px;
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #FFF;
+    content: "";
+}
+.list .top .tit::after {
+    position: absolute;
+    left: 64px;
+    top: 430px;
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #FFF;
+    content: "";
+}
+.list .bottom {
+    position: relative;
+    height: 540px;
+    padding: 73px 0 0 0;
+    color: #000;
+}
+.list .bottom::after {
+    position: absolute;
+    left: calc(50% - 400px);
+    bottom: -200px;
+    transform: translateX(50%);
+    width: 800px;
+    height: 800px;
+    border-radius: 800px;
+    border: 200px solid #FFC700;
+    background-color: #FFF;
+    z-index: -3;
+    content: "";
+}
+.list .bottom .tit {
+    display: block;
+    margin: 0 0 41px 0;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 30px;
+}
+.list .bottom .txt {
+    display: block;
+    line-height: 2;
+}
+.list .bottom .over {
+    position: relative;
+    width: 30%;
+    float: left;
+    margin: 0 4% 0 0;
+}
+.list .bottom .over::after {
+    position: absolute;
+    right: 0;
+    top: 23px;
+    width: 250px;
+    height: 1px;
+    background-color: #000;
+    content: "";
+}
+.list .bottom .tobe {
+    position: relative;
+    width: 30%;
+    float: left;
+}
+
+.list .bottom .tobe::after {
+    position: absolute;
+    right: 0;
+    top: 23px;
+    width: 315px;;
+    height: 1px;
+    background-color: #000;
+    content: "";
+}
+.list .bottom .link {
+    display: block;
+    float: right;
+    margin: 111px 0 0 0;
+    padding: 0 0 0 50px;
+    width: 32%;
+    height: 138px;
+}
+.list .bottom .link a {
+    position: relative;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 70px;
+    line-height: 50px;
+}
+.list .bottom .link a::after {
+    position: absolute;
+    right: -79px;
+    top: 61px;
+    width: 70px;
+    height: 70px;
+    background: url(../images/main/east.svg) no-repeat center center / contain;
+    content: "";
+}
+.main {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.sam .main  {
+    background-image: url(../images/main/main_sam.png);
+    height: 1279px;
+}
+.aqu .main  {
+    background-image: url(../images/main/main_aqu.png);
+    height: 1984px;
+}
+.jun .main  {
+    background-image: url(../images/main/main_jun.png);
+    height: 1005px;
+}
+.main .tit {
+    position: relative;
+    display: block;
+    padding: 130px 0 0 0;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 70px;
+    color: #FFF;
+    text-align: center;
+    z-index: 200;
+}
+.main .tit::before {
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 130px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #FFC700;
+    content: "";
+    z-index: -1;
+}
+.main a {
+    display: block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+.sam .main a {
+    height: 1000px;
+}
+.aqu .main a {
+    height: 1700px;
+}
+.jun .main a {
+    height: 700px;
+}
+.thankpg {
+    height: 900px;
+}
+.thankpg .tit {
+    position: relative;
+    padding: 400px 0 0 0;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 70px;
+    color: #000;
+    text-align: center;
+}
+.thankpg .tit::before {
+    position: absolute;
+    right: calc(50% + 700px);
+    top: 450px;
+    transform: translateX(50%);
+    width: 600px;
+    height: 1px;
+    background-color: #000;
+    content: "";
+}
+.thankpg .tit::after {
+    position: absolute;
+    left: calc(50% + 100px);
+    top: 450px;
+    transform: translateX(50%);
+    width: 600px;
+    height: 1px;
+    background-color: #000;
+    content: "";
+}

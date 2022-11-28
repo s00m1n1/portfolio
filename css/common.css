@@ -1,0 +1,325 @@
+/* 모든 페이지에 공통 들어가는 스타일 (header/footer) */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+html, body {
+    color: #1D1D1D;
+    line-height: 1.5;
+    font-family: "Pretendard Variable",'Racing Sans One', cursive, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    /* letter-spacing: -0.05em; */
+    word-break: keep-all; /* 단어별 줄바꿈 */
+}
+#wrap { /* id="wrap" */
+    overflow: hidden;
+    position: relative;
+    min-width: 320px;
+}
+/* 콘텐츠의 넓이를 제한하고 홈페이지를 브라우저 가운데 배치 */
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+    /* 1400px 이하부터 320px까지 모든 사이즈 반응형 
+       1400px 일때에도 좌우에 여백은 유지해야함 
+       (1400이상에서 1400px이하로 변경되는 점 - 반응형으로 전환되는점)
+       부드럽게 여백을 유지하면서 전환
+       원래 좌우에 여백이 20px씩 들어가 있는 걸로 스타일을 줌
+       1400px이 콘텐츠 영역인데 왼쪽 20 + 오른쪽 20 = 1440px이 넓이
+       padding으로 좌우에 여백을 20px씩 줌  */
+}
+@media screen and (max-width:1000px){
+    html, body {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:640px){
+    html, body {
+        font-size: 13px;
+    }
+}/* media 종료 */
+.clearfix::after{display:block;clear:both;content:".";visibility:hidden;height:0;}
+.clearfix{display:block;}
+
+/* wrapper와 동일한 사이즈를 갖은 position:relative를 요소는
+   cnt_wrap 클래스 줌 */
+.cnt_wrap {
+    position: relative;
+}
+
+.skip_nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000000000;
+    width: 100%;
+}
+.skip_nav a {
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #FFC700;
+    color: #1D1D1D;
+    text-align: center;
+}
+.skip_nav a:focus {
+    top: 0;
+}
+
+/* 브라우저에서 글자를 드래그했을대 드래그한 영역의 색과 글자색
+  -moz- -webkit- 이 앞에 붙은 속성은 표준화 되지 않은 속성  */
+::selection{background:#FFC700;color:#1D1D1D;}
+::-moz-selection{background:#FFC700;color:#1D1D1D;}
+::-webkit-selection{background:#FFC700;color:#1D1D1D;} 
+
+/* titpg */
+.titpg {
+    position: relative;
+    height: 1080px;
+    background-color: #000;
+}
+.titpg .tit {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Racing Sans One', cursive;
+    z-index: 10;
+    margin: 445px 0;
+}
+.titpg .tit p {
+    position: absolute;
+    left: 139px;
+    top: 42px;
+    color: #FFF;
+    font-size: 30px;
+}
+.titpg .tit h2 {
+    margin: 40px 0 0 0;
+    color: #FFC700;
+    font-size: 100px;
+}
+.titpg .tit h2 span {
+    color: #000;
+}
+.titpg .tit::before {
+    position: absolute;
+    left: -131px;
+    top: -21px;
+    width: 260px;
+    height: 260px;
+    border-radius: 130px;
+    background-color: #FFC700;
+    content: "";
+    z-index: -1;
+}
+.titpg .tit::after {
+    position: absolute;
+    left: 341px;
+    bottom: 0;
+    width: 1200px;
+    height: 1px;
+    background-color: #FFF;
+    content: "";
+}
+
+/* profilepg */
+.profilepg {
+    position: relative;
+    height: 1080px;
+}
+.profilepg::before { 
+    position: absolute;
+    left: 0;
+    top: 78px;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    content: "";
+}
+.profilepg::after { 
+    position: absolute;
+    left: 0;
+    bottom: 78px;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    content: "";
+}
+.profilepg .tit {
+    position: relative;
+    left: 195px;
+    top: 25px;
+    display: flex;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 70px;
+    color: #000;
+    background-color: #FFF;
+    width: 352px;
+    height: 106px;
+    align-items: center;
+    justify-content: center;
+}
+.profilepg .motto {
+    position: relative;
+    display: inline-block;
+    left: calc(50% - 700px);
+    transform: translateX(-50%);
+    top: 0;
+    margin: 163px 0 0 0;
+    color: #000;
+}
+.profilepg .motto::before {
+    position: absolute;
+    left: -66px;
+    top: 0;
+    width: 120px;
+    height: 50px;
+    background: url(../images/common/left.svg) no-repeat center center / contain;
+    content: "";
+}
+.profilepg .motto::after {
+    position: absolute;
+    right: -124px;
+    top: 114px;
+    width: 120px;
+    height: 50px;
+    background: url(../images/common/right.svg) no-repeat center center / contain;
+    content: "";
+}
+.profilepg .motto strong {
+    display: inline-block;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 70px;
+    text-align: center;
+}
+.profilepg .motto span {
+    display: block;
+    margin: 26px 0 0 0;
+    width: 663px;
+}
+ .profilepg .name {
+    position: relative;
+    float: left;
+    left: calc(50% + 180px);
+    margin: 328px 0 0 0;
+    top: 0;
+}
+.profilepg .name::after {
+    position: absolute;
+    left: 189px;
+    bottom: -141px;
+    width: 403px;
+    height: 403px;
+    border-radius: 202px;
+    background-color: #FFC700;
+    z-index: -1;
+    content: "";
+}
+.profilepg .name span {
+    display: block;
+    margin: 0 0 0 38px;
+}
+.profilepg .name strong {
+    position: relative;
+    display: block;
+    margin: -18px 0 0 0;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 50px;
+}
+.profilepg .name strong::after {
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    width: 200px;
+    height: 1px;
+    background-color: #000;
+    content: "";
+}
+.profilepg .skill {
+    position: relative;
+    display: inline-block;
+    left: calc(50% - 1600px);
+    transform: translateX(-50%);
+    top: 300px;
+    margin: 163px 0 0 0;
+}
+.profilepg .skill strong {
+    display: block;
+    margin: 0 0 24px 0;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 30px;
+    color: #000;
+}
+.profilepg .skill ul li {
+    float: left;
+}
+.profilepg  .contact {
+    position: relative;
+    float: right;
+    left: calc(-50% + 180px);
+    transform: translateX(50%);
+    top: 146px;
+    color: #000;
+}
+.profilepg  .contact strong {
+    display: block;
+    margin: 0 0 24px 0;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 30px;
+    color: #000;
+}
+.profilepg  .contact span {
+    display: block; 
+    margin: 0 0 15px 0;
+}
+
+/* header */
+.header {
+    position: relative;
+    /* height: 100px; */
+}
+.header_wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 300;
+    width: 100%;
+    height: 100px;
+    min-width: 1400px;
+}
+.header ul li {
+    position: relative;
+    float: left;
+    margin: 0 0 0 100px;
+    color: #FFF;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 30px;
+    line-height: 100px;
+}
+.header ul li a {
+    position: relative;
+    z-index: 200;
+}
+.header ul li.active::before {
+    position: absolute;
+    left: -22px;
+    top: 18px;
+    width: 57px;
+    height: 57px;
+    border-radius: 27px;
+    background-color: #FFC700;
+    z-index: 100;
+    content: "";
+}
+.header.fixed .header_wrap {
+    position: fixed;
+    background-color: #FFF;
+}
+.header.fixed ul li {
+    color: #000;
+}

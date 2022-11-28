@@ -1,0 +1,253 @@
+@import url(default.css);
+@import url(common.css);
+
+#wrap {
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    /* background-size: cover; */
+}
+.visual {
+    position: relative;
+    height: 800px;
+}
+.visual .txt {
+    position: relative;
+    margin: 337px 0 0 0;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.visual .txt p {
+    font-size: 30px;
+}
+.visual .txt h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.visual .txt::before {
+    position: absolute;
+    left: -300px;
+    top: 50%;
+    width: 600px;
+    height: 1px;
+    background-color: #FFF;
+    content: "";
+}
+.visual .txt::after {
+    position: absolute;
+    right: -300px;
+    top: 50%;
+    width: 600px;
+    height: 1px;
+    background-color: #FFF;
+    content: "";
+}
+.intro .tit {
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFF;
+}
+.intro .tit::before {
+    position: absolute;
+    left: -260px;
+    top: 50%;
+    width: 200px;
+    height: 1px;
+    background-color: #FFF;
+    content: "";
+}
+.intro .contents1 {
+    position: relative;
+    margin: 152px 0 175px 0;
+}
+.intro .contents1 .inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 700px;
+    margin: 166px 0 0 0;
+    color: #FFF;
+    z-index: 2;
+}
+.intro .inner strong {
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.intro .inner span {
+    display: block;
+    margin: 10px 0;
+}
+.intro .contents1 .pic {
+    float: right;
+}
+.intro .contents1 .pic img {
+    border-radius: 0 350px 350px 0;
+}
+.intro .contents2 {
+    position: relative;
+    margin: 0 0 202px 0;
+}
+.intro .contents2 .inner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 700px;
+    margin: 166px 0 0 0;
+    color: #FFF;
+    z-index: 2;
+    text-align: right;
+}
+.intro .contents2 .pic {
+    float: left;
+}
+.intro .contents2 .pic img {
+    border-radius: 350px 0 0 350px;
+}
+.program {
+    position: relative;
+    color: #FFF;
+}
+.program .tit {
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+}
+.program .tit::before {
+    position: absolute;
+    left: -260px;
+    top: 50%;
+    width: 200px;
+    height: 1px;
+    background-color: #FFF;
+    content: "";
+}
+.program .contain {
+    position: relative;
+    padding: 150px 0 0 0;
+}
+.program .contain .cnt_tit {
+    position: absolute;
+    left: 150px;
+    top: -88px;
+    font-size: 100px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px #FFF;
+}
+.program .contain .txt {
+    position: relative;
+    float: left;
+    margin: 123px 0 0 50px;
+    width: 360px;
+}
+.program .contain .txt span {
+    display: block;
+    margin: 10px 0;
+}
+.program .contain .txt .txt_tit {
+    font-size: 30px;
+    margin: 0 0 70px 0;
+}
+.program .contain img {
+    float: left;
+    width: 920px;
+    height: 579px;
+    object-fit: cover;
+    z-index: 100;
+}
+.program .box {
+    position: absolute;
+    left: 260px;
+    bottom: -60px;
+    width: 800px;
+    height: 225px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 0 40px 40px 0;
+}
+.program .bnt {
+    position: absolute;
+    left:calc(50% + 300px);
+    bottom: -60px;
+    display: flex;
+    align-items: center;
+}
+.program .bnt .paging {
+    padding: 0 0 5px 0;
+}
+.program button i {
+    font-size: 40px;
+    font-weight: 300;
+}
+.service {
+    margin: 150px 0 0 0;
+}
+.service .txt {
+    float: left;
+}
+.service .txt .tit {
+    position: relative;
+    margin: 0 0 38px 0;
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFF;
+}
+.service .txt .tit::before {
+    position: absolute;
+    left: -260px;
+    top: 50%;
+    width: 200px;
+    height: 1px;
+    background-color: #FFF;
+    content: "";
+}
+.service p {
+    font-size: 20px;
+    color: #FFF;
+}
+.service ul {
+    float: right;
+    margin: 35px 0 175px 0;
+}
+.service ul li {
+    position: relative;
+    float: left;
+}
+.service ul li::after {
+    position: absolute;
+    right: 0;
+    top: 37px;
+    width: 1px;
+    height: 150px;
+    background-color: #FFF;
+    content: "";
+}
+.service ul li:last-child::after {
+    display: none;
+}
+.service ul li a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #FFF;
+    width: 188px;
+}
+.service ul li a i {
+    padding: 35px 0 50px 0;
+    font-size: 70px;
+    font-weight: 300;
+}
+.service ul li a span {
+    font-size: 20px;
+}
+.banner ul li {
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 125px;
+}
+.banner ul li:last-child {
+    margin-right: 0;
+}

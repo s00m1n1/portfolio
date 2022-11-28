@@ -1,0 +1,148 @@
+/* 모든 페이지에 공통 들어가는 스타일 (header/footer) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;700&display=swap');
+html, body {
+    color: #3D3D3D;
+    line-height: 1.5;
+    font-family: Variable 'Noto Serif KR', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    /* letter-spacing: -0.05em; */
+    word-break: keep-all; /* 단어별 줄바꿈 */
+}
+#wrap { /* id="wrap" */
+    overflow: hidden;
+    position: relative;
+    min-width: 320px;
+}
+/* 콘텐츠의 넓이를 제한하고 홈페이지를 브라우저 가운데 배치 */
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+    /* 1400px 이하부터 320px까지 모든 사이즈 반응형 
+       1400px 일때에도 좌우에 여백은 유지해야함 
+       (1400이상에서 1400px이하로 변경되는 점 - 반응형으로 전환되는점)
+       부드럽게 여백을 유지하면서 전환
+       원래 좌우에 여백이 20px씩 들어가 있는 걸로 스타일을 줌
+       1400px이 콘텐츠 영역인데 왼쪽 20 + 오른쪽 20 = 1440px이 넓이
+       padding으로 좌우에 여백을 20px씩 줌  */
+}
+@media screen and (max-width:1000px){
+    html, body {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:640px){
+    html, body {
+        font-size: 13px;
+    }
+}/* media 종료 */
+.clearfix::after{display:block;clear:both;content:".";visibility:hidden;height:0;}
+.clearfix{display:block;}
+
+/* wrapper와 동일한 사이즈를 갖은 position:relative를 요소는
+   cnt_wrap 클래스 줌 */
+.cnt_wrap {
+    position: relative;
+}
+
+.skip_nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000000000;
+    width: 100%;
+}
+.skip_nav a {
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #3519CE;
+    color: #FFF;
+    text-align: center;
+}
+.skip_nav a:focus {
+    top: 0;
+}
+
+/* 브라우저에서 글자를 드래그했을대 드래그한 영역의 색과 글자색
+  -moz- -webkit- 이 앞에 붙은 속성은 표준화 되지 않은 속성  */
+::selection{background:#3519CE;color:#fff;}
+::-moz-selection{background:#3519CE;color:#fff;}
+::-webkit-selection{background:#3519CE;color:#fff;} 
+
+.header {
+    height: 100px;
+    background-color: rgba(0,0,0, 0.1);
+}
+.header .logo {
+    float: left;
+    padding: 27px 0 0 46px;
+}
+.header nav ul {
+    float: right;
+}
+.header nav ul li {
+    float: left;
+    margin: 0 27px 0 0;
+}
+.header nav ul li a {
+    display: block;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 100px;
+}
+.footer {
+    position: relative;
+    padding: 50px 0 0 0;
+    background-color: rgba(0,0,0, 0.1);
+}
+.footer::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #FFF;
+    content: "";
+}
+.footer .logo {
+    margin: 0 0 50px 0;
+}
+.footer .logo a {
+    display: block;
+}
+.footer .logo img{
+    width: 205px;
+}
+.footer .sns {
+    float: right;
+    margin: -74px 0 0 0;
+}
+.footer .sns ul li {
+    float: left;
+    margin-left: 10px;
+}
+.footer .sns ul li a {
+    display: block;
+}
+.footer .sns ul li a img {
+    width: 30px;
+    height: 25px;
+}
+.footer .inner {
+    margin: 0 0 24px 0;
+    color: #FFF;
+}
+.footer .inner span {
+    display: inline-block;
+    margin: 0 35px 0 0 ;
+}
+.footer .copy {
+    padding: 0 0 75px 0;
+    color: #FFF;
+}
