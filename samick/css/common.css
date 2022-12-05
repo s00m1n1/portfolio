@@ -4,7 +4,7 @@
 html, body {
     color: #3D3D3D;
     line-height: 1.5;
-    font-family: "Pretendard Variable", 'Noto Serif KR', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-family: 'Pretendard Variable', Pretendard, 'Noto Serif KR', -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 15px;
     font-weight: 400;
     /* letter-spacing: -0.05em; */
